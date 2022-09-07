@@ -9,8 +9,8 @@ jobs:
       germaine: je fais git 
     steps:
       - uses: actions/checkout@v3 
-       - name: hello world 
-       run: echo $variable
+      - name: hello world 
+        run: echo $variable
   jobs2:
     runs-on: ubuntu-latest
     steps:
