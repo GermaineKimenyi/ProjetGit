@@ -40,4 +40,5 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: pull
+        if: ${{ github.event_name == 'pull_request' }}
         run: echo $variable2    
