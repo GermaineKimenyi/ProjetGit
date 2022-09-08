@@ -1,5 +1,5 @@
 # name: projet1
-# on: [push]
+# on: [push, pull_request]
 # env:
 #   variable: var1
 # jobs:
@@ -16,4 +16,10 @@
 #     steps:
 #       - uses: actions/checkout@v3 
 #       - name: hello world 
-#         run: echo $germaine    
+#         run: echo $germaine  
+
+
+        # steps:
+        # - name: My first step  
+        #  if: ${{ github.event_name == 'pull_request' && github.event.action == 'unassigned' }}  
+        #   run: echo This event is a pull request that had an assignee removed.  
