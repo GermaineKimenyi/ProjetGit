@@ -26,7 +26,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: push
-        if: ${{ github.event_name == 'push' }}
+        # if: ${{ github.event_name == 'push' }}
         run: echo $variable1
         
          # This workflow contains a single job called "build"
